@@ -1,0 +1,13 @@
+@use "./palette.scss" as palette;
+
+.bs-card {
+	padding: 2em;
+	background-color: palette.$card-colour;
+	color: palette.$text-colour;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+	box-shadow: 0 0.5em 1em palette.$card-shadow-colour;
+	border-radius: 0.3em;
+	position: relative;
+}

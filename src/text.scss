@@ -1,0 +1,13 @@
+@use "./palette.scss" as palette;
+
+.bs-text-red {
+	color: palette.$colour-red;
+}
+
+.bs-text-orange {
+	color: palette.$colour-orange;
+}
+
+.bs-text-blue {
+	color: palette.$colour-blue;
+}
