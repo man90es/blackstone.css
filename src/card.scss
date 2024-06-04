@@ -1,13 +1,14 @@
-@use "./palette.scss" as palette;
+@use "./variables.scss" as variables;
+@use "sass:map";
 
 .bs-card {
-	padding: 2em;
-	background-color: palette.$card-colour;
-	color: palette.$text-colour;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 0.5em;
-	box-shadow: 0 0.5em 1em palette.$card-shadow-colour;
+	background-color: #37393f;
 	border-radius: 0.3em;
+	box-shadow: 0 0.5em 1em #0005;
+	color: map.get(variables.$colours, "white");
+	display: grid;
+	gap: 0.5em;
+	grid-template-columns: 1fr 1fr;
+	padding: 2em;
 	position: relative;
 }

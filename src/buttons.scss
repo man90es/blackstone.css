@@ -1,41 +1,20 @@
-@use "./palette.scss" as palette;
+@use "./variables.scss" as variables;
 
-.bs-button-green,
-.bs-button-blue,
-.bs-button-red,
-.bs-button-orange,
-.bs-button-teal {
-	border-radius: 0.1em;
-	border: none;
-	box-shadow: 0 0 0.2em palette.$input-shadow-colour;
-	color: palette.$button-text-colour;
-	cursor: pointer;
-	font-size: 0.9rem;
-	font-weight: bold;
-	padding: 0.5rem;
-	transition: 0.2s;
+@each $colour, $value in variables.$colours {
+	.bs-button-#{$colour} {
+		background-color: $value;
+		border-radius: 0.1em;
+		border: none;
+		box-shadow: 0 0 0.2em #0005;
+		color: #f8f8f8;
+		cursor: pointer;
+		font-size: 0.9rem;
+		font-weight: bold;
+		padding: 0.5rem;
+		transition: 0.2s;
 
-	&:hover {
-		box-shadow: 0 0.1em 0.4em palette.$input-shadow-colour;
+		&:hover {
+			box-shadow: 0 0.1em 0.4em #0005;
+		}
 	}
-}
-
-.bs-button-green {
-	background-color: palette.$colour-green;
-}
-
-.bs-button-blue {
-	background-color: palette.$colour-blue;
-}
-
-.bs-button-red {
-	background-color: palette.$colour-red;
-}
-
-.bs-button-orange {
-	background-color: palette.$colour-orange;
-}
-
-.bs-button-teal {
-	background-color: palette.$colour-teal;
 }

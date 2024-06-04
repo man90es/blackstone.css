@@ -1,13 +1,7 @@
-@use "./palette.scss" as palette;
+@use "./variables.scss" as variables;
 
-.bs-text-red {
-	color: palette.$colour-red;
-}
-
-.bs-text-orange {
-	color: palette.$colour-orange;
-}
-
-.bs-text-blue {
-	color: palette.$colour-blue;
+@each $colour, $value in variables.$colours {
+	.bs-text-#{$colour} {
+		color: $value;
+	}
 }

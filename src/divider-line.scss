@@ -1,12 +1,9 @@
-@use "./palette.scss" as palette;
-
 .bs-divider-line {
 	$or-margin: 2em;
 
-	background-color: palette.$card-colour;
+	background-color: #37393f;
 	font-size: 0.8em;
 	font-weight: bold;
-	grid-column: 1/3;
 	margin: 1rem 0;
 	opacity: 0.5;
 	text-align: center;
@@ -16,8 +13,7 @@
 	&::after {
 		content: "";
 		display: block;
-
-		background-color: palette.$text-colour;
+		background-color: #f0f0f0;
 		height: 1px;
 		width: calc(50% - $or-margin);
 	}
